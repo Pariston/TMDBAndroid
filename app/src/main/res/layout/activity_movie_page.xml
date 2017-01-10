@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f1f"
+    android:columnCount="1"
+    android:rowCount="2"
+    tools:context="com.example.elzoy.tmdb.MoviePageActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_height="500px">
+        <ImageView
+            android:layout_height="500px"
+            android:id="@+id/movie_poster"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content" />
+        <GridLayout
+            android:layout_columnWeight="1"
+            android:layout_width="0px"
+            android:columnCount="1"
+            android:rowCount="2"
+            android:paddingTop="20px"
+            android:paddingLeft="50px"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#f93232"
+                android:textSize="20sp">
+            </TextView>
+            <ListView
+                android:id="@+id/genres"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+        </GridLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_rowWeight="1"
+        android:layout_width="match_parent"
+        android:columnCount="1"
+        android:rowCount="2"
+        android:paddingTop="20px"
+        android:paddingBottom="20px">
+
+        <TextView
+            android:paddingTop="20px"
+            android:paddingLeft="20px"
+            android:paddingBottom="30px"
+            android:paddingRight="20px"
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:maxLines="7"
+            android:scrollbars="vertical"
+            android:textSize="17sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/addToFavourites"
+            android:text="Dodaj do ulubionych"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:background="#c93636"
+            android:textColor="#fff">
+        </Button>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="3"
+        android:padding="20px"
+        android:background="#c93636"
+        android:rowCount="1">
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/movie_vote_average"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:maxLines="7"
+            android:textAlignment="center"
+            android:scrollbars="vertical"
+            android:textSize="15sp">
+        </TextView>
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/movie_vote_count"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:maxLines="7"
+            android:scrollbars="vertical"
+            android:textAlignment="center"
+            android:textSize="15sp">
+        </TextView>
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:id="@+id/movie_popularity"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:maxLines="7"
+            android:textAlignment="center"
+            android:scrollbars="vertical"
+            android:textSize="15sp">
+        </TextView>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#4f4f4f"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            android:src="@drawable/main"
+            android:id="@+id/mainButton" />
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            android:src="@drawable/settings"
+            android:id="@+id/genresButton" />
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            android:src="@drawable/ic_action_name"
+            android:id="@+id/favouritesButton" />
+    </GridLayout>
+</GridLayout>
+

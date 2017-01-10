@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="30sp"
+    android:paddingTop="20px"
+    android:paddingBottom="20px"
+    android:columnCount="2">
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_poster"
+        android:src="@drawable/main" />
+
+    <GridLayout
+        android:layout_columnWeight="1"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:columnCount="1"
+        android:rowCount="2">
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_overview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15sp">
+        </TextView>
+    </GridLayout>
+</GridLayout>

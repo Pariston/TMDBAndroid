@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f1f"
+    android:rowCount="2"
+    android:columnCount="1"
+    tools:context="com.example.elzoy.tmdb.MainActivity">
+
+    <ListView
+        android:id="@+id/movies"
+        android:layout_width="match_parent"
+        android:layout_rowWeight="1"
+        android:layout_height="200px" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#4f4f4f"
+        android:columnCount="3"
+        android:rowCount="1">
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#c93636"
+            app:srcCompat="@drawable/main"
+            android:id="@+id/mainButton" />
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            app:srcCompat="@drawable/settings"
+            android:id="@+id/genresButton" />
+
+        <ImageButton
+            android:layout_columnWeight="1"
+            android:layout_height="match_parent"
+            android:background="#3f3f3f"
+            app:srcCompat="@drawable/ic_action_name"
+            android:id="@+id/favouritesButton" />
+    </GridLayout>
+</GridLayout>
